@@ -2,15 +2,17 @@
 
 Installer package for [oem-aa-mod](https://github.com/VitaliyKurokhtin/oem-aa-mod) — adds Android Auto support to Mazda CMU (MZD Connect).
 
+`run.sh` is an all-in-one script that handles both **installing** and **uninstalling** the mod. It will prompt you to choose when run.
+
 Releases are built automatically whenever a new upstream version is published. Download the latest `oem-aa-mod-<version>-installer.zip` from the [Releases](https://github.com/Bijan-A/oem-aa-mod-installer/releases) page.
 
 ## Requirements
 
 - USB flash drive **32 GB or smaller**, formatted as **FAT32**
 
-## Installation
+## Installation / Uninstallation
 
-1. Extract the zip and copy the **contents** of the `oem-aa-mod-<version>-installer/` folder to the **root directory** of your flash drive.
+1. Extract the zip and copy all files to the **root directory** of your flash drive.
 
 2. Safely eject the drive and plug it into your Mazda.
 
@@ -26,13 +28,13 @@ Releases are built automatically whenever a new upstream version is published. D
 
    > If nothing happens, try `cd /tmp/mnt/sdb1` instead — this depends on which USB port you used.
 
-6. Run the installer:
+6. Run the script:
 
    ```sh
    sh run.sh
    ```
 
-7. Follow any on-screen prompts. Once complete, reboot the head unit.
+7. Follow the on-screen prompts to install or uninstall. Once complete, reboot the head unit.
 
 ## Credits
 
